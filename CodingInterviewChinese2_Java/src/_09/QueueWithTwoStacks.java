@@ -24,19 +24,19 @@ public class QueueWithTwoStacks {
     }
 
     public void appendTail(int val) {
-        this.stack1.push(val);
+        stack1.push(val);
     }
     
     public int deleteHead() {
-        if(this.stack2.isEmpty()) {
-            while(!this.stack1.isEmpty()) {
-                this.stack2.push(this.stack1.pop());
+        if(stack2.isEmpty()) {
+            while(!stack1.isEmpty()) {
+                stack2.push(stack1.pop());
             }
         }
-        if(this.stack2.isEmpty()) {
+        if(stack2.isEmpty()) {
             throw new RuntimeException("队列为空！");
         }
-        return this.stack2.pop();
+        return stack2.pop();
     }
     
 }
