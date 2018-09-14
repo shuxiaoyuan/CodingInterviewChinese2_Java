@@ -56,8 +56,8 @@ public class NextNodeInBinaryTrees {
                 next = next.parent;
             }
             
-            // 包括 next 为 null 的情况（当 btn 是中序遍历最后一个结点时）
-            return next;
+            // 包括 next.parent 为 null 的情况（当 btn 是中序遍历最后一个结点时）
+            return next.parent;
         }
         
         // btn 是没有右子树的根结点
