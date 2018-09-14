@@ -21,7 +21,7 @@ public class NextNodeInBinaryTrees {
         // 只有右子树
         int[] pre3 = {1, 2, 3, 4};
         int[] in3 = {1, 2, 3, 4};
-        System.out.println("只有左子树：" + getNext(BinaryTreeNode.construct(pre3, in3)).val);
+        System.out.println("只有右子树：" + getNext(BinaryTreeNode.construct(pre3, in3)).val);
         
         // 只有一个根结点
         System.out.println("只有一个根结点：" + getNext(new BinaryTreeNode(1)));
@@ -45,12 +45,14 @@ public class NextNodeInBinaryTrees {
         // btn 有父亲节点
         if(btn.parent != null) {
             BinaryTreeNode next = btn.parent;
+            
+            // 当前节点为父节点的左子树（其实可以不写，直接让最后 return next，写上是为了省下面的 while 循环）
             if(btn == btn.parent.left) {
                 return next;
             }
-            BinaryTreeNode current = btn;
-            while(current.parent != null && current == next.right) {
-                current = next;
+            
+            // 当前节点为父节点的右子树
+            while(next.parent != null && next == next.parent.right) {
                 next = next.parent;
             }
             
