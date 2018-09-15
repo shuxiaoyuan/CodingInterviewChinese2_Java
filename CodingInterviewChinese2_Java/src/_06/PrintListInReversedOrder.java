@@ -2,9 +2,10 @@ package _06;
 
 import java.util.ArrayDeque;
 
+
 /**
  * 面试题6：从尾到头打印链表
- *
+ * P58
  */
 
 public class PrintListInReversedOrder {

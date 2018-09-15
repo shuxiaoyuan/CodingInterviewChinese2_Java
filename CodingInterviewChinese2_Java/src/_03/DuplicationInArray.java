@@ -2,9 +2,10 @@ package _03;
 
 import java.util.Arrays;
 
+
 /**
  * 面试题3：数组中重复的数字
- * n 个元素，都在 0~n-1 之间，找出其中一个重复数字
+ * P39
  */
 public class DuplicationInArray {
     

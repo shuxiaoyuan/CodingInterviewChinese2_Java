@@ -2,8 +2,7 @@ package _03;
 
 /**
  * 面试题3：不修改数组找出重复的数字
- * n+1 个元素，都在 1~n 之内，找出其中一个重复数字
- * 时间 O(nlogn) 空间 O(1)
+ * P41
  */
 public class DuplicationInArrayNoEdit {
 

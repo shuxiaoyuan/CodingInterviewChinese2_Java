@@ -2,6 +2,12 @@ package _09;
 
 import java.util.ArrayDeque;
 
+
+/**
+ * 面试题9：用两个队列实现栈
+ * P71
+ */
+
 public class StackWithTwoQueues {
 
     public ArrayDeque<Integer> queue1 = new ArrayDeque<>();
