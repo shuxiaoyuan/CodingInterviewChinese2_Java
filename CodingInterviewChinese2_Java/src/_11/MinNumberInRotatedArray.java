@@ -10,7 +10,15 @@ public class MinNumberInRotatedArray {
 
     public static void main(String[] args) {
         int[] numbers1 = {4, 5, 6, 1, 2, 3};
-        int[] numbers2 = {};
+        int[] numbers2 = {1, 1, 1, 0, 1};
+        int[] numbers3 = {};
+        int[] numbers4 = null;
+        
+        System.out.println("numbers1:" + minNumber(numbers1));
+        System.out.println("numbers2:" + minNumber(numbers2));
+        //System.out.println("numbers3:" + minNumber(numbers3));
+        //System.out.println("numbers4:" + minNumber(numbers4));
+        
     }
 
     public static int minNumber(int[] numbers) {
@@ -41,7 +49,7 @@ public class MinNumberInRotatedArray {
                 index2 = indexm;
             }
         }
-        return indexm;
+        return numbers[indexm];
     }
     
     public static int sequentialSearch(int[] numbers, int index1, int index2) {
