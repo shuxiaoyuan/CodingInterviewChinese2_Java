@@ -1,5 +1,10 @@
 package _14;
 
+
+/**
+ * 面试题14：剪绳子
+ * P96
+ */
 public class CuttingRope {
 
     public static void main(String[] args) {

@@ -1,5 +1,10 @@
 package _15;
 
+
+/**
+ * 面试题15：二进制中1的个数
+ * P103
+ */
 public class Pow2Judge {
 
     public static void main(String[] args) {
