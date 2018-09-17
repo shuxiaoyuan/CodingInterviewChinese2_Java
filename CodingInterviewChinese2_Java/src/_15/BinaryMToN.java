@@ -2,7 +2,7 @@ package _15;
 
 
 /**
- * 面试题15：二进制中1的个数
+ * 面试题15：改变 m 的二进制位数得到 n
  * P103
  */
 public class BinaryMToN {

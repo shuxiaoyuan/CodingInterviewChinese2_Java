@@ -4,7 +4,6 @@ package _15;
 /**
  * 面试题15：二进制中1的个数
  * P100
- *
  */
 public class NumberOf1InBinary {
 

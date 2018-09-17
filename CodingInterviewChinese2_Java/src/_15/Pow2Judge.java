@@ -2,7 +2,7 @@ package _15;
 
 
 /**
- * 面试题15：二进制中1的个数
+ * 面试题15：2的整数次方
  * P103
  */
 public class Pow2Judge {
