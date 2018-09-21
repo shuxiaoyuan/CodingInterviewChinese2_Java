@@ -1,5 +1,10 @@
 package _16;
 
+
+/**
+ * 数值的整数次方
+ * P110
+ */
 public class Power {
 
     public static boolean gInvalidInput = false;
